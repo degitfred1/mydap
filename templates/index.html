@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:yellow;">
+   <form method="post">
+     {%csrf_token%}
+     {%for x in who1%}
+     <p><a href='{{x.music.url}}' download='{{x.music.url}}'>DOWNLOAD WISH WELL BY JOE B MP3</a></p>
+     {%endfor%}
+     <br><br>
+     {%for y in who2%}
+     <p><a href='{{y.music.url}}' download='{{y.music.url}}'>DOWNLOAD WISH WELL BEATZ BY JOE B MP3</a></p>
+     {%endfor%}
+
+
+
+
+   </form>
+    
+
+
+
+
+
+</body>
+</html>
